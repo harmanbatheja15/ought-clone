@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
-const Donate = () => {
+const DonateCTA = () => {
 	return (
 		<>
 			<div className="donate-container w-full">
@@ -31,13 +32,15 @@ const Donate = () => {
 						<div className="mt-10 w-full md:w-1/2 lg:mt-0">
 							<form className="flex lg:justify-end">
 								<div className="flex w-full max-w-md items-center space-x-2">
-									<button
-										type="button"
-										className="rounded-full bg-white px-6 py-2 text-sm shadow-md text-[#139caf] font-semibold inline-flex items-center md:mx-0 mx-auto"
-									>
-										Donate
-										<ArrowRight className="h-4 w-4 ml-1" />
-									</button>
+									<Link to="/donate">
+										<button
+											type="button"
+											className="rounded-full bg-white px-6 py-2 text-sm shadow-md text-[#139caf] font-semibold inline-flex items-center md:mx-0 mx-auto"
+										>
+											Donate
+											<ArrowRight className="h-4 w-4 ml-1" />
+										</button>
+									</Link>
 								</div>
 							</form>
 						</div>
@@ -48,4 +51,4 @@ const Donate = () => {
 	);
 };
 
-export default Donate;
+export default DonateCTA;

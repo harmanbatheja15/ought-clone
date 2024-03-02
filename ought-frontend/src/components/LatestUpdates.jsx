@@ -1,4 +1,4 @@
-const Updates = () => {
+const LatestUpdates = () => {
 	return (
 		<>
 			<div className="px-2 mb-24">
@@ -8,7 +8,7 @@ const Updates = () => {
 					</p>
 					<div className="xl:grid xl:grid-cols-12 xl:gap-36">
 						<div className="xl:col-span-5">
-							<a href="">
+							<a href="#">
 								<div className="group p-5 hover:bg-white rounded-lg hover:shadow-lg transition-all duration-500">
 									<h1 className="text-6xl font-medium text-[#363f49] group-hover:text-[#8f3969]">
 										Ought has spun off Elicit
@@ -23,7 +23,7 @@ const Updates = () => {
 						</div>
 						<div className="mt-10 xl:col-span-5 xl:mt-0">
 							<div>
-								<a href="">
+								<a href="#">
 									<div className="group mb-9 first:mt-0 p-5 hover:bg-white rounded-lg hover:shadow-lg transition-all duration-500">
 										<h3 className="text-2xl font-medium leading-6 text-[#363f49] group-hover:text-[#8f3969]">
 											AI Safety Needs Great Product
@@ -37,7 +37,7 @@ const Updates = () => {
 										</p>
 									</div>
 								</a>
-								<a href="">
+								<a href="#">
 									<div className="group my-9 first:mt-0 p-5 hover:bg-white rounded-lg hover:shadow-lg transition-all duration-500">
 										<h3 className="text-2xl font-medium leading-6 text-[#363f49] group-hover:text-[#8f3969]">
 											A Library and Tutorial for Factored
@@ -50,7 +50,7 @@ const Updates = () => {
 										</p>
 									</div>
 								</a>
-								<a href="">
+								<a href="#">
 									<div className="group mt-9 first:mt-0 p-5 hover:bg-white rounded-lg hover:shadow-lg transition-all duration-500">
 										<h3 className="text-2xl font-medium leading-6 text-[#363f49] group-hover:text-[#8f3969]">
 											How to use Elicit responsibly
@@ -70,4 +70,4 @@ const Updates = () => {
 	);
 };
 
-export default Updates;
+export default LatestUpdates;

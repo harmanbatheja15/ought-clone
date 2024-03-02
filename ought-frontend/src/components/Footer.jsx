@@ -1,4 +1,5 @@
 import { Linkedin, Twitter, Github, Earth } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
@@ -8,9 +9,12 @@ const Footer = () => {
 					<div className="w-full p-6 sm:w-3/3 lg:w-6/12">
 						<div className="flex h-full flex-col justify-between">
 							<div className="mb-4 inline-flex items-center">
-								<span className="text-3xl font-bold text-[#5f6568]">
+								<Link
+									to="/"
+									className="text-3xl font-bold text-[#5f6568]"
+								>
 									ought
-								</span>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -18,28 +22,28 @@ const Footer = () => {
 						<div className="h-full">
 							<ul>
 								<li className="mb-4">
-									<a
+									<Link
+										to="/about"
 										className=" text-base font-medium text-[#8d9390] hover:text-white transition-all duration-500"
-										href="#"
 									>
 										About
-									</a>
+									</Link>
 								</li>
 								<li className="mb-4">
-									<a
+									<Link
+										to="/mission"
 										className=" text-base font-medium text-[#8d9390] hover:text-white transition-all duration-500"
-										href="#"
 									>
 										Mission
-									</a>
+									</Link>
 								</li>
 								<li className="mb-4">
-									<a
+									<Link
+										to="/updates"
 										className=" text-base font-medium text-[#8d9390] hover:text-white transition-all duration-500"
-										href="#"
 									>
 										Updates
-									</a>
+									</Link>
 								</li>
 							</ul>
 						</div>
@@ -48,28 +52,28 @@ const Footer = () => {
 						<div className="h-full">
 							<ul>
 								<li className="mb-4">
-									<a
+									<Link
+										to="/team"
 										className=" text-base font-medium text-[#8d9390] hover:text-white transition-all duration-500"
-										href="#"
 									>
 										Team
-									</a>
+									</Link>
 								</li>
 								<li className="mb-4">
-									<a
+									<Link
+										to="/elicit"
 										className=" text-base font-medium text-[#8d9390] hover:text-white transition-all duration-500"
-										href="#"
 									>
 										Elicit
-									</a>
+									</Link>
 								</li>
 								<li className="mb-4">
-									<a
+									<Link
+										to="/donate"
 										className=" text-base font-medium text-[#8d9390] hover:text-white transition-all duration-500"
-										href="#"
 									>
 										Donate
-									</a>
+									</Link>
 								</li>
 							</ul>
 						</div>
@@ -87,19 +91,22 @@ const Footer = () => {
 								<li className="flex ml-8">
 									<a
 										className="font-medium text-[#8d9390] hover:text-white transition-all duration-500"
-										href="#"
+										href="https://www.linkedin.com/feed/"
+										target="_blank"
 									>
 										<Linkedin />
 									</a>
 									<a
 										className="font-medium text-[#8d9390] hover:text-white transition-all duration-500 ml-2"
-										href="#"
+										href="https://twitter.com/"
+										target="_blank"
 									>
 										<Twitter />
 									</a>
 									<a
 										className="font-medium text-[#8d9390] hover:text-white transition-all duration-500 ml-2"
-										href="#"
+										href="https://github.com/"
+										target="_blank"
 									>
 										<Github />
 									</a>

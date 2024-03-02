@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
 	return (
@@ -25,16 +26,18 @@ const Banner = () => {
 							</p>
 						</div>
 					</div>
-					<button
-						className="bg-white py-2 px-6 rounded-full text-[#139caf] font-semibold inline-flex items-center"
-						style={{
-							boxShadow:
-								"0 2px 7px rgba(219,215,214,.5568627450980392), -10px -10px 40px hsla(0,0%,100%,.5294117647058824)",
-						}}
-					>
-						Read our mission
-						<ArrowRight className="h-5 w-5 ml-1 cursor-pointer" />
-					</button>
+					<Link to="/mission">
+						<button
+							className="bg-white py-2 px-6 rounded-full text-[#139caf] font-semibold inline-flex items-center"
+							style={{
+								boxShadow:
+									"0 2px 7px rgba(219,215,214,.5568627450980392), -10px -10px 40px hsla(0,0%,100%,.5294117647058824)",
+							}}
+						>
+							Read our mission
+							<ArrowRight className="h-5 w-5 ml-1 cursor-pointer" />
+						</button>
+					</Link>
 				</div>
 			</div>
 		</>

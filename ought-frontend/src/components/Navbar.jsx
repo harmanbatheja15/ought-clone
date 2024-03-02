@@ -1,22 +1,23 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu } from "lucide-react";
 
 const menuItems = [
 	{
 		name: "Mission",
-		href: "#",
+		to: "/mission",
 	},
 	{
 		name: "Elicit",
-		href: "#",
+		to: "/elicit",
 	},
 	{
 		name: "Team",
-		href: "#",
+		to: "/team",
 	},
 	{
 		name: "Updates",
-		href: "#",
+		to: "/updates",
 	},
 ];
 
@@ -29,22 +30,27 @@ const Navbar = () => {
 
 	return (
 		<>
-			<div className="relative w-full">
+			<div
+				className="relative w-full"
+				onClick={() => {
+					isMenuOpen && setIsMenuOpen(false);
+				}}
+			>
 				<div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-[1.5rem] sm:px-6 md:px-8">
 					<div className="inline-flex items-center space-x-2">
-						<a
-							href="/"
+						<Link
+							to="/"
 							className="hover:text-gray-900 text-[#5f6568] font-semibold text-2xl"
 						>
 							ought
-						</a>
+						</Link>
 					</div>
 					<div className="hidden md:block">
 						<ul className="inline-flex space-x-8">
 							{menuItems.map((item) => (
 								<li key={item.name}>
-									<a
-										href={item.href}
+									<Link
+										to={item.to}
 										className="hover:text-gray-900 text-[#5f6568] font-normal"
 										style={{
 											fontSize:
@@ -52,7 +58,7 @@ const Navbar = () => {
 										}}
 									>
 										{item.name}
-									</a>
+									</Link>
 								</li>
 							))}
 						</ul>
@@ -69,15 +75,15 @@ const Navbar = () => {
 								<div className="px-5 pb-6 pt-5">
 									<nav className="grid gap-y-4">
 										{menuItems.map((item) => (
-											<a
+											<Link
 												key={item.name}
-												href={item.href}
+												to={item.to}
 												className="-m-3 flex items-start justify-start rounded-md py-3 px-16 text-sm hover:bg-gray-50"
 											>
 												<span className="font-medium text-[#5f6568]">
 													{item.name}
 												</span>
-											</a>
+											</Link>
 										))}
 									</nav>
 								</div>
