@@ -15,8 +15,8 @@ const Team = () => {
 				<div className="flex max-w-2xl flex-col items-center rounded-md md:flex-row">
 					<div className="md:h-[200px] md:w-[1000px]">
 						<img
-							src="https://www.sanger.ac.uk/userpics/800/pa11.jpg"
-							alt="Piyush Ahuja"
+							src="https://ought.org/images/profiles/evans.jpg"
+							alt="Owain Evans"
 							className="h-full w-full rounded-md object-contain"
 						/>
 					</div>
@@ -24,8 +24,8 @@ const Team = () => {
 						<div className="py-4 px-0 md:px-4">
 							<div className="">
 								<h1 className="inline-flex items-center text-lg font-semibold mr-2 text-[#007d96]">
-									<a href="https://linkedin.com/in/piyush-ahuja-2006041b/">
-										Piyush Ahuja
+									<a href="https://linkedin.com/feed/">
+										Owain Evans
 									</a>
 								</h1>
 								<span>Director and CEO</span>
@@ -37,9 +37,7 @@ const Team = () => {
 								iusto distinctio sed similique dolores natus
 								minus enim neque quod molestias voluptatum,
 								consectetur necessitatibus saepe quis quaerat
-								illo excepturi, ipsa veniam expedita, labore
-								vel? Id explicabo vitae suscipit itaque
-								voluptatem ex.
+								illo excepturi.
 							</p>
 						</div>
 					</div>
